@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/306790368_5532621500197887_3510534326302486582_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeECwqlVZQOn6PLf6LcQ4Ro-MiXCctyJ5KkyJcJy3InkqTJqiQRvLl0d9lGwbytuBBrkCPBMOHCgyS_TPgL48YZ3&_nc_ohc=NFXdZIaObJ4AX8d00V_&_nc_ht=scontent.feoh3-1.fna&oh=00_AT-jP9lM09BtgkBQsIqhjXTbtjnuE6wYd7g8R0eicDoIWA&oe=634DA0D8" type="image/x-icon">  
+    <title>Edwin Palacios</title>
+
+</head>
+<body>
+
+    <header class="terminal-logo">
+        <div class="logo terminal-prompt">
+            <a href="#" class="no-style">
+                Edwin Palacios - EdwiinRtz
+            </a>
+        </div>   
+    
+        <nav class="terminal-menu">
+            <ul>
+                <li><a class="menu-item" href="#projects">Projects</a></li>
+                <li><a class="menu-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" id="open-burger" onclick="burger('False')">
+            <i class="material-icons">menu</i>
+        </a>
+
+
+        <i id="close-burger" class="material-icons" onclick="burger('True')">close</i>
+        <nav id="burger-menu">
+            <ul>
+                <li><a class="menu-item" onclick="burger('True')" href="#projects">Projects</a></li>
+                <li><a class="menu-item" onclick="burger('True')" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="Presentation">
+
+        <div id="photo">
+            <img id = "profile_photo"src="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/306790368_5532621500197887_3510534326302486582_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeECwqlVZQOn6PLf6LcQ4Ro-MiXCctyJ5KkyJcJy3InkqTJqiQRvLl0d9lGwbytuBBrkCPBMOHCgyS_TPgL48YZ3&_nc_ohc=NFXdZIaObJ4AX8d00V_&_nc_ht=scontent.feoh3-1.fna&oh=00_AT-jP9lM09BtgkBQsIqhjXTbtjnuE6wYd7g8R0eicDoIWA&oe=634DA0D8" alt="Profile">   
+        </div>
+        
+        <div id="description">
+            <h1>
+                <span><h3>¡Hola a todos!</h3></span>
+                <span>Soy Edwin Palacios</span>
+            </h1>
+            <p>
+                Desarrollador de software y mobile developer en formación :D
+            </p>
+            <div class="social">
+                <a href="https://github.com/Edwiinrtz" class="no-style">
+                    <i class="material-icons">
+                        code      
+                    </i>
+                    <span>
+                        Github
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/edwin-alonso-palacios-ortiz-2a7a111b9/" class="no-style">
+                    <i class="material-icons">
+                        link      
+                    </i>
+                    <span>
+                        Linkedin
+                    </span>
+                </a>    
+              </div>
+        </div>
+
+        
+    </section>
+    <hr>
+    <div id="godownarrow">
+        <a href="#projects">
+            <i class="material-icons">
+                keyboard_arrow_down
+            </i>
+        </a>
+    </div>
+    <section id="projects">
+        <h2> Projects </h2>
+
+        <article class="project">
+
+            <div class="project-description">
+
+                <h2 class="project-title">
+                    <span>
+                        Next episode app
+                    </span>
+                </h2>
+                
+                <p class="project-desc">
+                    Manage your Watching anime list from a web interface by your phone, it´s kind a ip remote control that automates the process of playing your next anime episode, save the last episode you watched and select your favorite player or the one enabled.
+
+                    Animeflv.net is the plataform where it's implemented.
+                </p>
+
+                <a href="https://github.com/Edwiinrtz/next_episode_app">
+                    <button class="btn">Ver codigo</button>
+                </a>
+
+            </div>
+
+            <div class="project-image">
+                <img src="images\0cbe4e18-38c5-46d2-9188-7bf9efbde802.jpeg" alt="">
+            </div>
+            
+        </article>
+        <article class="project">
+
+            <div class="project-description">
+                <h2 class="project-title">
+                    <span>
+                        Ghibli movies
+                    </span>
+                </h2>
+                <p class="project-desc">
+                    Studio ghlibi movies player. Some of the best (personal opinion) studio ghlibi movies were selected and stored on memory.
+
+                    When the user selects a webview is deployed and it reproduces the movie on mega player.
+                </p>
+                <a href="https://github.com/Edwiinrtz/GhibliMovies">
+                    <button class="btn">Ver codigo</button>
+                </a>
+            </div>
+            <div class="project-image">
+                <img src="images\aa99efb8-7f67-4c94-bebc-b4b34e18d67e.jpeg" alt="">
+            </div>
+
+            
+        </article>
+
+
+    </section>
+    <hr>
+
+    <section id="contact">
+
+        <h2>Contact me</h2>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/edwin-alonso-palacios-ortiz-2a7a111b9/" class="no-style">
+                <i class="material-icons">
+                    link      
+                </i>
+                <span>
+                    Linkedin
+                </span>
+            </a> 
+            <a href="mailto: edwiinrtz@gmail.com" class="no-style">
+                <i class="material-icons">
+                    email      
+                </i>
+                <span>
+                    Email
+                </span>
+            </a> 
+            <a href="https://wa.me/573158331891" class="no-style">
+                <i class="material-icons">
+                    chat      
+                </i>
+                <span>
+                    whatsapp
+                </span>
+            </a>    
+          </div>
+    </section>
+
+    <footer> <p>  develop by EdwiinRtz &#10084;  </p> </footer>
+</body>
+<script src="js\script.js"></script>
+</html>

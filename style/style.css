@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #202124;
+    color: white;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin: .5em 0 5em 0;
+}
+header .terminal-prompt{
+    width: 80%;
+}
+
+
+#burger-menu,#close-burger,#open-burger{
+    display: none; 
+}
+#burger-menu .menu-item{
+
+    
+    color: white;
+    display: block;
+    padding: 1em;
+}
+#burger-menu .terminal-menu ul{
+    display: inline-block;
+}
+
+
+#Presentation{
+    display: flex;
+}
+#photo{
+    float: right;
+}
+#description{
+    float: left;
+    margin: 0 10%;
+    width: 80%;
+}
+#profile_photo{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+.social a{
+    display: inline-flex;
+    align-items: center;
+    font-size: larger;
+    padding: 1vw;
+}
+.social a:hover{
+    text-decoration: none;
+    
+
+}
+#godownarrow{
+        text-align: center;
+}
+#godownarrow a{
+    font-size: 6rem;
+    color: black;
+    
+}
+#projects{
+    margin: 5% 0;
+    display: inline-block;
+}
+.project{
+    display: flex;
+    margin: 5% 0;
+}
+.project .project-description{
+    width: 70%;
+}
+.project .project-image{
+    width: 30%;
+}
+
+.project .project-image img{
+    width: 100%;
+}
+#contact{
+    text-align: center;
+}
+footer p{
+    margin: 5% 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    body{
+        width: 95%;
+    }
+
+    #Presentation{
+        display: inline-block;
+        text-align: right;
+    }
+    #Presentation h1{
+        margin: 0 25%;
+    }
+    #profile_photo{
+        width: 300px;
+        height: 300px;
+    }
+    #photo{
+        margin: 0 25%;
+    }
+
+
+    .terminal-menu{
+        display: none;
+    }
+    #open-burger{
+        display: inline-block;
+        padding: 20px 0;
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #burger-menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: rgb(128, 128, 128,.69 );
+        width: 25%; 
+    }
+    #close-burger{
+        position: fixed;
+        top: 2%;
+        right: 26%;
+    }
+}
