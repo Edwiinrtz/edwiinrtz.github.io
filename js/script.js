@@ -14,7 +14,7 @@ function burger(isOpened) {
     }
 }
 
-let dark = window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('dark')
+let dark = window.matchMedia('(prefers-color-scheme: dark)').matches
 modeSwitcher()
 
 
@@ -52,6 +52,4 @@ modeSwitcher()
         document.querySelectorAll('.modeSwitcher').forEach(it => it.textContent = 'dark mode' )
     }
     dark = !dark
-
-    localStorage.setItem('dark', !dark)
 } 
