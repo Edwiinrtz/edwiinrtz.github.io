@@ -16,7 +16,6 @@ header .terminal-prompt{
     width: 80%;
 }
 
-
 #burger-menu,#close-burger,#open-burger{
     display: none; 
 }
@@ -40,14 +39,14 @@ header .terminal-prompt{
 }
 #description{
     float: left;
-    margin: 0 10%;
-    width: 80%;
+    margin: 0 0%;
+    width: 100%;
 }
-#profile_photo{
+/* #profile_photo{
     border-radius: 100%;
     width: 400px;
     height: 400px;
-}
+} */
 .social a{
     display: inline-flex;
     align-items: center;
