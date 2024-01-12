@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Recursive">
     <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">  
     <title>Edwin Palacios</title>
+    <style id="dark_mode_switer">
+    
+    </style>
 
 </head>
-<body class="terminal">
+<body class="terminal" style="color: var(--invert-color)">
 
     <header class="terminal-logo">
         <div class="logo terminal-prompt">
@@ -28,6 +31,7 @@
                 <li><a class="menu-item" href="#projects">Projects</a></li>
                 <li><a class="menu-item" href="#certifications">Certifications</a></li>
                 <li><a class="menu-item" href="#contact">Contact</a></li>
+                <li class="modeSwitcher"onclick="modeSwitcher()">dark mode</li>
             </ul>
         </nav>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -39,6 +43,7 @@
         <i id="close-burger" class="material-icons" onclick="burger('True')">close</i>
         <nav id="burger-menu">
             <ul>
+                <li onclick="modeSwitcher()"><a class="menu-item modeSwitcher" onclick="burger('True')" href="#">dark mode</a></li>
                 <li><a class="menu-item" onclick="burger('True')" href="#projects">Projects</a></li>
                 <li><a class="menu-item" onclick="burger('True')" href="#certifications">Certifications</a></li>
                 <li><a class="menu-item" onclick="burger('True')" href="#contact">Contact</a></li>
@@ -110,11 +115,11 @@
                 </p>
 
                 <a href="https://www.tiktok.com/@edwiinrtz/video/7322865108089130245" target=”_blank” >
-                    <button class="btn">Video presentation</button>
+                    <button class="btn btn-default">Video presentation</button>
                 </a>
 
                 <a href="https://github.com/Edwiinrtz/popo" target=”_blank”>
-                    <button class="btn">source code</button>
+                    <button class="btn btn-default">source code</button>
                 </a>
 
 
@@ -135,11 +140,11 @@
                     Aplicación pensada para gestionar las personas y necesidades de tu morada. Principalmente servirá como tablero común en el que se describe las compras pendientes o mensajes generales de una personas para las demás o para la posteridad.
                 </p>
                 <a href="https://alabaster-journey-508.notion.site/Morad-App-1f506408373b4dd69465d19ed813a2ca" target=”_blank”>
-                    <button class="btn">Description</button>
+                    <button class="btn btn-default">Description</button>
                 </a>
 
                 <a href="https://github.com/Edwiinrtz/Morad-App" target=”_blank”>
-                    <button class="btn">source code</button>
+                    <button class="btn btn-default">source code</button>
                 </a>
 
 
@@ -163,7 +168,7 @@
                 </p>
 
                 <a href="https://github.com/Edwiinrtz/next_episode_app" target=”_blank”>
-                    <button class="btn">source code</button>
+                    <button class="btn btn-default">source code</button>
                 </a>
 
             </div>
@@ -182,7 +187,7 @@
                     When the user selects a webview is deployed and it reproduces the movie on mega player.
                 </p>
                 <a href="https://github.com/Edwiinrtz/GhibliMovies" target=”_blank”>
-                    <button class="btn">source code</button>
+                    <button class="btn btn-default">source code</button>
                 </a>
             </div>
         </article>

@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    color: var(--font-color);
+
 }
 body{
     width: 60%;
@@ -14,6 +16,10 @@ header{
 }
 header .terminal-prompt{
     width: 80%;
+}
+
+.modeSwitcher{
+    cursor: pointer;
 }
 
 #burger-menu,#close-burger,#open-burger{
