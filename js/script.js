@@ -13,8 +13,13 @@ function burger(isOpened) {
         document.getElementById("open-burger").style.display = "none"
     }
 }
+let dark = false
+if(localStorage.getItem('dark')){
+    dark = true
+}
 
-let dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+//window.matchMedia('(prefers-color-scheme: dark)').matches
+console.log('dark', dark)
 modeSwitcher()
 
 
@@ -46,8 +51,10 @@ modeSwitcher()
             --display-h1-decoration: none;
         }
     `
-    document.querySelectorAll('.modeSwitcher').forEach(it => it.textContent = 'light mode' )
+        document.querySelectorAll('.modeSwitcher').forEach(it => it.textContent = 'light mode' )
+        localStorage.setItem('dark', true)
     }else{
+        localStorage.removeItem('dark')
         document.querySelector('#dark_mode_switer').innerHTML = ''
         document.querySelectorAll('.modeSwitcher').forEach(it => it.textContent = 'dark mode' )
     }
